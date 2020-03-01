@@ -22,10 +22,10 @@
                     <th><%= category.title %></th>
                     <th><%= category.slug %></th>
                     <th>
-                        <a  href="/admin/categories/edit/<%= category.id %>" class="btn btn-info">Editar</a>
+                        <a  href="/admin/categories/edit/<%= category.id %>" class="btn btn-info mb-2">Editar</a>
                         <form method="POST" action="/categories/delete" style="display: inline;" onsubmit="confirmaDelete(event, this)">
                             <input type="hidden" name="id" value="<%= category.id %>">
-                            <button class="btn btn-danger">Excluir</button>
+                            <button class="btn btn-danger mb-2">Excluir</button>
                         </form>
                     </th>
                 </tr>
