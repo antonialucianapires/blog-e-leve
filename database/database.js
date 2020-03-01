@@ -8,6 +8,7 @@ const connection = new Sequelize(
         host: 'mysql669.umbler.com',
         port: '41890',
         dialect: 'mysql',
+        timezone: '-03:00'
     }
 );
 
