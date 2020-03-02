@@ -1,5 +1,17 @@
 <%- include ('partials/head.ejs') %>
 <%- include ('partials/navbar.ejs') %>
 <%- include ('partials/banner.ejs') %>
-<h2>oi</h2>
+<section class="container p-0  mt-4">
+<% articles.forEach(article => { %>
+    <div class="card mb-3" style="border: 1px solid #009688">
+        <div class="card-body">
+            <h4><%= article.titulo %></h4>
+            <p class="descricao_home"><%= article.body %></p>
+            <div class="d-flex">
+                <p><%= article.author %></p>
+            </div>
+        </div>
+    </div>
+<% }) %>
+</section>
 <%- include ('partials/footer.ejs') %>
