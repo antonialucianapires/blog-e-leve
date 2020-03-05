@@ -5,18 +5,11 @@
     </button>
     <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link text-uppercase" href="#">#naMidia</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-uppercase" href="#">Sustentabilidade</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-uppercase" href="#">Tecnologia</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-uppercase" href="#">Educação</a>
-          </li>
+          <% categories.forEach(category => { %>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase" href="/category/<%= category.slug %>"><%= category.title %></a>
+            </li>
+          <% }) %>
         </ul>
       </div>
 </nav>
